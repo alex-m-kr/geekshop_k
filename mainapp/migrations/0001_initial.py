@@ -15,9 +15,7 @@ class Migration(migrations.Migration):
             fields=[
                 (
                     "id",
-                    models.BigAutoField(
-                        auto_created=True, primary_key=True, serialize=False, verbose_name="ID"
-                    ),
+                    models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID"),
                 ),
                 ("name", models.CharField(max_length=64, unique=True, verbose_name="имя")),
                 ("description", models.TextField(blank=True, verbose_name="описание")),
